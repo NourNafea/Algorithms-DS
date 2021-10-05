@@ -45,8 +45,11 @@ namespace Variables
             return false;
         }
 
+        private static bool PersonIsSeller(string name)
+        {
+            return name.EndsWith("e");
+        }
+
     }
 
-
 }
-
