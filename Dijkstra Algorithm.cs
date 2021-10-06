@@ -57,6 +57,7 @@ namespace ConsoleApplication
         {
             var lowestCost = double.PositiveInfinity;
             string lowestCostNode = null;
+            
             foreach (var node in costs)
             {
                 var cost = node.Value;
@@ -66,6 +67,7 @@ namespace ConsoleApplication
                     lowestCostNode = node.Key;
                 }
             }
+            
             return lowestCostNode;
         }
     }
