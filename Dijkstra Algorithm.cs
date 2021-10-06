@@ -52,3 +52,20 @@ namespace ConsoleApplication
             }
             Console.WriteLine(string.Join(", ", costs));
         }
+        private static string FindLowestCostNode(Dictionary<string, double> costs)
+        {
+            var lowestCost = double.PositiveInfinity;
+            string lowestCostNode = null;
+            foreach (var node in costs)
+            {
+                var cost = node.Value;
+                if (cost < lowestCost && !_processed.Contains(node.Key))
+                {
+                    lowestCost = cost;
+                    lowestCostNode = node.Key;
+                }
+            }
+            return lowestCostNode;
+        }
+    }
+}
