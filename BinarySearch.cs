@@ -22,7 +22,6 @@ namespace Variables
             while (Low <= High)
             {
                 var mid = (Low + High) / 2;
-
                 if (nums[mid] == target)
                     return mid;
                 if (nums[mid] < target)
