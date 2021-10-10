@@ -4,7 +4,6 @@ namespace Variables
 {
     class Program{
         
-        
         static void Main(string[] args)
         {
             int[] arr = { 67, 12, 95, 56, 85, 1, 100, 23, 60, 9 };
